@@ -257,6 +257,7 @@ const Contact = () => {
                 name="from_name"
                 onChange={handleChange}
                 value={toSend.from_name}
+                required
               />
               <Input
                 className={isDark ? "dark" : "light"}
@@ -265,14 +266,16 @@ const Contact = () => {
                 name="subject"
                 onChange={handleChange}
                 value={toSend.subject}
+                required
               />
               <Input
                 className={isDark ? "dark" : "light"}
-                type="text"
+                type="email"
                 placeholder="Email"
                 name="email"
                 onChange={handleChange}
                 value={toSend.email}
+                required
               />
               <TextArea
                 className={isDark ? "dark" : "light"}
@@ -281,6 +284,7 @@ const Contact = () => {
                 name="message"
                 onChange={handleChange}
                 value={toSend.message}
+                required
               ></TextArea>
               <Submit isDark={isDark}>Submit</Submit>
             </Form>
